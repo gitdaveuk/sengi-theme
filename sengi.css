@@ -1,0 +1,177 @@
+/*
+* Sengi Safari Theme for Thymer
+* Inspired by the Black and Rufous Sengi
+* Deep blacks, rich burnt oranges, and sandy accents
+*/
+
+/* ------------------------------------------- */
+/* Sengi Safari - Bold & Natural               */
+/* ------------------------------------------- */
+html[data-theme="basic-dark-sengi-safari"] {
+    color-scheme: dark;
+    --text-base-size: 16px;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Rufous Orange                 */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #d35400; /* Rich Burnt Orange */
+    }
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Midnight Black/Brown */
+    /* ------------------------------------------- */
+    --color-bg-50: #4a453f;
+    --color-bg-100: #3d3832;
+    --color-bg-150: #312d28;
+    --color-bg-200: #292521;
+    --color-bg-300: #221e1a;
+    --color-bg-400: #1a1714;
+    --color-bg-500: #12100e;
+    --color-bg-600: #12100e;
+    --color-bg-700: #0d0b09;
+    --color-bg-800: #141210; /* Sidebar - very dark charcoal */
+    --color-bg-900: #0a0908; /* Main window - near black */
+    --color-bg-950: #050504;
+    --color-bg-500-50: rgba(18, 16, 14, 0.5);
+    --color-bg-950-50: rgba(5, 5, 4, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Vivid Rufous            */
+    /* ------------------------------------------- */
+    --color-primary-50: #fff4ed;
+    --color-primary-100: #ffe1cc;
+    --color-primary-200: #ffc299;
+    --color-primary-300: #ff9d5c;
+    --color-primary-400: #e67e22; /* Sengi Rufous */
+    --color-primary-500: #d35400; /* Burnt Orange */
+    --color-primary-600: #ba4a00;
+    --color-primary-700: #a04000;
+    --color-primary-800: #873600;
+    --color-primary-900: #6e2c00;
+    --color-primary-950: #461d00;
+    --color-primary-400-70: rgba(230, 126, 34, 0.7);
+    --color-primary-950-20: rgba(70, 29, 0, 0.2);
+    --color-primary-text-100: #0a0908;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Sandy Cream               */
+    /* ------------------------------------------- */
+    --color-text-50: #f5e9d6; /* Pale sandy highlight */
+    --color-text-100: #f5e9d6;
+    --color-text-200: #e5d8c3;
+    --color-text-300: #d5c8b2;
+    --color-text-400: #b9ad98;
+    --color-text-500: #9d927f;
+    --color-text-600: #827867;
+    --color-text-700: #e67e22;
+    --color-text-800: #d5c8b2;
+    --color-text-900: #1a1816;
+    --color-text-950: #827867;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors                          */
+    /* ------------------------------------------- */
+    --text-ok: #a2ad3e; /* Mossy Green */
+    --text-status-online: #a2ad3e;
+    --text-warning: #f39c12;
+    --text-error: #c0392b;
+    --bg-alert: #c0392b;
+    --fg-alert: #f5e9d6;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions                   */
+    /* ------------------------------------------- */
+    --link-color: #e67e22;
+    --link-hover-color: #ff9d5c;
+    --ed-link-color: #e67e22;
+    --ed-link-hover-color: #ff9d5c;
+
+    --ed-hashtag-color: #e67e22;
+    --ed-hashtag-bg: rgba(230, 126, 34, 0.15);
+
+    --ed-mention-color: #f5e9d6;
+    --ed-mention-bg: rgba(245, 233, 214, 0.1);
+    --ed-mention-hover-bg: rgba(245, 233, 214, 0.2);
+    --ed-mention-hover-color: #ffffff;
+
+    --ed-datetime-color: #ff9d5c;
+    --ed-datetime-bg: rgba(255, 157, 92, 0.15);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes                       */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #e67e22;
+    --ed-check-div-hover-border: #ff9d5c;
+    --ed-check-done-bg: #e67e22;
+    --ed-check-done-fg: #0a0908;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #827867 !important;
+        text-decoration-color: #827867 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                        */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(230, 126, 34, 0.3);
+    --selection-fg: #ffffff;
+    --ed-selection-self-bg: rgba(230, 126, 34, 0.3);
+    --ed-selection-blurred-bg: rgba(230, 126, 34, 0.15);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: #e67e22;
+    --ed-caret-self-box-shadow: 0 0 4px #e67e22;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code                            */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #d35400;
+
+    --ed-code-border: transparent;
+    --ed-code-bg: rgba(34, 30, 26, 0.8);
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #ff9d5c !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* ------------------------------------------- */
+    /* 10. UI Components                           */
+    /* ------------------------------------------- */
+    --cards-bg: #12100e;
+    --cards-hover-bg: #1a1714;
+    
+    --button-primary-bg-color: #e67e22;
+    --button-primary-fg-color: #0a0908;
+    --button-primary-bg-hover-color: #ff9d5c;
+    
+    --logo-color: #e67e22;
+    --logo-glow-shadow:
+        0 0 15px rgba(230, 126, 34, 0.4),
+        0 0 30px rgba(230, 126, 34, 0.2);
+
+    /* Enums - Earthy Palette */
+    --enum-red-bg: rgba(192, 57, 43, 0.25);
+    --enum-red-fg: #c0392b;
+    --enum-orange-bg: rgba(230, 126, 34, 0.25);
+    --enum-orange-fg: #e67e22;
+    --enum-yellow-bg: rgba(241, 196, 15, 0.25);
+    --enum-yellow-fg: #f1c40f;
+    --enum-green-bg: rgba(162, 173, 62, 0.25);
+    --enum-green-fg: #a2ad3e;
+
+    --gradient-scrim: none;
+}
